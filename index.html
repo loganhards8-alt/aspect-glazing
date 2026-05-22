@@ -3,313 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aspect Glazing | Architectural Glass Masters</title>
+    <title>Aspect Glazing | Premium Scottish Window & Door Specialists</title>
     <style>
-        /* High-End Design Reset */
+        /* Luxury Heritage Reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
         }
 
         body {
-            background-color: #0b0f19;
-            color: #f8fafc;
+            background-color: #f4f7f6;
+            color: #1e293b;
             line-height: 1.6;
-            overflow-x: hidden;
         }
 
-        /* Luxury Minimalist Header */
+        /* Premium Nav Bar */
         header {
-            background-color: rgba(11, 15, 25, 0.85);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
+            background-color: #ffffff;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.03);
             position: sticky;
             top: 0;
             z-index: 1000;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            border-bottom: 3px solid #1d4ed8; /* Proud Scottish Blue Accent Line */
         }
 
         .nav-container {
-            max-width: 1400px;
+            max-width: 1300px;
             margin: 0 auto;
-            padding: 25px;
+            padding: 22px 25px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .logo {
-            font-size: 22px;
-            font-weight: 900;
-            letter-spacing: 2px;
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: #0f172a;
             text-transform: uppercase;
-            color: #ffffff;
         }
 
         .logo span {
-            color: #3b82f6;
+            color: #1d4ed8;
             font-weight: 300;
-            position: relative;
         }
 
-        /* Next-Level Cinematic Hero Section */
+        /* Deep Cinematic Scottish Heritage Hero */
         .hero {
             position: relative;
-            min-height: 85vh;
+            min-height: 80vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 100px 25px;
-            background: radial-gradient(circle at top right, rgba(59, 130, 246, 0.15), transparent 45%),
-                        linear-gradient(rgba(11, 15, 25, 0.65), #0b0f19), 
-                        url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            padding: 120px 25px;
+            /* Combines a heavy stone architectural overlay with a dark navy tint */
+            background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)), 
+                        url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            text-align: center;
         }
 
-        .hero-container {
-            max-width: 1100px;
-            width: 100%;
-            display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
-            gap: 50px;
-            align-items: center;
+        /* Glassmorphism Stone Shield Text Box */
+        .hero-card {
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            padding: 60px 45px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
         }
 
-        .hero-text {
-            text-align: left;
-        }
-
-        /* Floating Badge */
-        .badge {
+        .tagline {
             display: inline-block;
-            background: rgba(59, 130, 246, 0.1);
-            border: 1px solid rgba(59, 130, 246, 0.3);
-            color: #60a5fa;
-            padding: 8px 16px;
-            border-radius: 100px;
+            background: #1d4ed8;
+            color: #ffffff;
             font-size: 13px;
-            font-weight: 600;
-            letter-spacing: 1px;
+            font-weight: 700;
             text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 6px 18px;
+            border-radius: 4px;
             margin-bottom: 25px;
         }
 
         .hero h1 {
-            font-size: 64px;
+            font-size: 56px;
             font-weight: 900;
-            line-height: 1.1;
-            letter-spacing: -2px;
+            line-height: 1.15;
+            letter-spacing: -1px;
+            color: #ffffff;
             margin-bottom: 25px;
-            background: linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
         }
 
         .hero p {
-            font-size: 20px;
-            color: #94a3b8;
+            font-size: 21px;
+            color: #f1f5f9;
             margin-bottom: 40px;
-            font-weight: 400;
-            max-width: 600px;
+            font-weight: 300;
+            max-width: 750px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        /* Interactive Call To Action */
-        .btn-premium {
-            display: inline-flex;
-            align-items: center;
-            background: #ffffff;
-            color: #0b0f19;
-            padding: 20px 40px;
-            font-size: 16px;
+        /* Heavy Duty Call to Action Button */
+        .btn-scotland {
+            display: inline-block;
+            background-color: #1d4ed8;
+            color: #ffffff;
+            padding: 18px 45px;
+            font-size: 18px;
             font-weight: 700;
             text-decoration: none;
-            border-radius: 8px;
-            letter-spacing: 0.5px;
-            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
-        }
-
-        .btn-premium:hover {
-            background: #3b82f6;
-            color: #ffffff;
-            transform: translateY(-4px) scale(1.02);
-            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.4);
-        }
-
-        /* Asymmetric Statement Card */
-        .hero-statement-card {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            padding: 40px;
-            border-radius: 20px;
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
-            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
-        }
-
-        .hero-statement-card h3 {
-            font-size: 22px;
-            color: #ffffff;
-            margin-bottom: 12px;
-            font-weight: 700;
-        }
-
-        .hero-statement-card p {
-            font-size: 15px;
-            color: #64748b;
-            margin: 0;
-        }
-
-        /* High-End Grid Architecture */
-        .showcase-section {
-            max-width: 1400px;
-            margin: 140px auto;
-            padding: 0 25px;
-        }
-
-        .section-header {
-            max-width: 700px;
-            margin-bottom: 80px;
-        }
-
-        .section-header h2 {
-            font-size: 42px;
-            font-weight: 800;
-            letter-spacing: -1px;
-            margin-bottom: 20px;
-        }
-
-        .section-header p {
-            color: #64748b;
-            font-size: 18px;
-        }
-
-        .grid-architecture {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
-        }
-
-        /* Cyber-Glass Cards with Hover Neon Glow */
-        .luxury-card {
-            background: #111827;
-            border: 1px solid rgba(255, 255, 255, 0.04);
-            padding: 50px 40px;
-            border-radius: 16px;
-            transition: all 0.4s ease;
-            position: relative;
-        }
-
-        .luxury-card:hover {
-            transform: translateY(-8px);
-            border-color: rgba(59, 130, 246, 0.4);
-            box-shadow: 0 25px 50px -12px rgba(59, 130, 246, 0.25);
-        }
-
-        .card-num {
-            font-size: 14px;
-            font-weight: 700;
-            color: #3b82f6;
-            margin-bottom: 30px;
-            display: block;
-            letter-spacing: 2px;
-        }
-
-        .luxury-card h3 {
-            font-size: 24px;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #ffffff;
-        }
-
-        .luxury-card p {
-            color: #94a3b8;
-            font-size: 16px;
-            font-weight: 300;
-        }
-
-        /* Minimalist Footer */
-        footer {
-            background: #090d16;
-            padding: 60px 25px;
-            text-align: center;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        footer p {
-            color: #475569;
-            font-size: 14px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(29, 78, 216, 0.3);
+            text-transform: uppercase;
             letter-spacing: 1px;
         }
 
-        /* Flawless Mobile Responsiveness */
-        @media (max-width: 1024px) {
-            .hero-container { grid-template-columns: 1fr; gap: 40px; }
-            .grid-architecture { grid-template-columns: 1fr; gap: 30px; }
-            .hero h1 { font-size: 48px; }
+        .btn-scotland:hover {
+            background-color: #1e40af;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(29, 78, 216, 0.5);
         }
 
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 38px; }
-            .hero p { font-size: 18px; }
-            .btn-premium { width: 100%; justify-content: center; }
-            .section-header h2 { font-size: 32px; }
+        /* Dedicated Core Services Showcase */
+        .showcase-container {
+            max-width: 1300px;
+            margin: 120px auto;
+            padding: 0 25px;
         }
-    </style>
-</head>
-<body>
 
-    <header>
-        <div class="nav-container">
-            <div class="logo">Aspect<span>Glazing</span></div>
-        </div>
-    </header>
+        .main-heading {
+            text-align: center;
+            margin-bottom: 80px;
+        }
 
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-text">
-                <span class="badge">Scottish Heritage &amp; Craft</span>
-                <h1>Architectural Glass Perfection</h1>
-                <p>We install world-class, heavy-duty structural glazing solutions engineered directly for structural endurance and stunning elite finishes.</p>
-                <a href="tel:01234567890" class="btn-premium">Direct Line: Contact Masters</a>
-            </div>
-            
-            <div class="hero-statement-card">
-                <h3>Built for the Extreme</h3>
-                <p>Engineered stone-property framework designed flawlessly to maximize insulation while keeping a sharp, premium aesthetic footprint.</p>
-            </div>
-        </div>
-    </section>
+        .main-heading h2 {
+            font-size: 40px;
+            font-weight: 800;
+            color: #0f172a;
+            letter-spacing: -1px;
+            margin-bottom: 15px;
+        }
 
-    <section class="showcase-section">
-        <div class="section-header">
-            <h2>Elite Architectural Work</h2>
-            <p>Moving far beyond simple standard replacements. We provide precision-driven glass transformations built to dominate local standards.</p>
-        </div>
-        
-        <div class="grid-architecture">
-            <div class="luxury-card">
-                <span class="card-num">01 / STRUCTURAL</span>
-                <h3>Bespoke Window Design</h3>
-                <p>Heavy-duty, thermal-efficient structural windows tailored exactly to fit traditional highland stone or clean architectural glass facades.</p>
-            </div>
-            <div class="luxury-card">
-                <span class="card-num">02 / INSULATION</span>
-                <h3>Premium High-End Entrances</h3>
-                <p>Stunning, heavily reinforced structural door frames featuring luxury insulated glass arrays designed to block the harshest conditions completely.</p>
-            </div>
-            <div class="luxury-card">
-                <span class="card-num">03 / SPECIALIST</span>
-                <h3>Custom Master Glazing</h3>
-                <p>Flawless precision modifications, major glass upgrades, and custom work engineered to look breathtakingly sleek on any property.</p>
-            </div>
-        </div>
-    </section>
+        .main-heading p {
+            font-size: 19px;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto;
+        }
 
-    <footer>
-        <p>&copy; 2026 Aspect Glazing. Setting the Ultimate Industrial Standard.</p>
-    </footer>
+        /* Premium Dual Column Layout focused completely on Windows & Doors */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
 
-</body>
-</html>
+        .feature-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            padding: 50px 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0
