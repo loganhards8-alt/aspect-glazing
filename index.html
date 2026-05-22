@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspect Glazing | Premium Windows & Doors Dundee</title>
+    <style>
+        :root {
+            --dark: #1a1a1a;
+            --grey: #2d3134;
+            --light: #f8f9fa;
+            --accent: #d4af37; /* Clean gold accent for a premium feel */
+            --white: #ffffff;
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--white); color: var(--dark); line-height: 1.6; }
+        
+        header { background-color: var(--dark); color: var(--white); padding: 20px; text-align: center; border-bottom: 3px solid var(--accent); }
+        .logo { font-size: 28px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; }
+        .logo span { color: var(--accent); }
+        .phone-link { color: var(--white); text-decoration: none; font-size: 18px; display: block; margin-top: 10px; font-weight: 600; }
+
+        .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover; color: var(--white); padding: 80px 20px; text-align: center; }
+        .hero h1 { font-size: 36px; margin-bottom: 15px; font-weight: 700; text-transform: uppercase; }
+        .hero p { font-size: 18px; max-width: 600px; margin: 0 auto 30px; color: #cccccc; }
+        
+        .btn { display: inline-block; background-color: var(--accent); color: var(--dark); padding: 15px 35px; text-decoration: none; font-weight: bold; border-radius: 4px; text-transform: uppercase; font-size: 16px; transition: 0.3s; }
+        .btn:hover { background-color: var(--white); color: var(--dark); }
+
+        .section { padding: 60px 20px; max-width: 1000px; margin: 0 auto; }
+        .section-title { text-align: center; font-size: 28px; margin-bottom: 40px; text-transform: uppercase; position: relative; }
+        .section-title::after { content: ''; display: block; width: 60px; height: 3px; background: var(--accent); margin: 10px auto 0; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 40px; }
+        .card { background: var(--light); padding: 30px; border-radius: 6px; border-left: 4px solid var(--dark); }
+        .card h3 { margin-bottom: 10px; font-size: 20px; color: var(--grey); }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: var(--light); border-radius: 6px; overflow: hidden; }
+        th, td { padding: 15px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: var(--dark); color: var(--white); text-transform: uppercase; font-size: 14px; }
+
+        footer { background: var(--dark); color: #888888; text-align: center; padding: 30px 20px; font-size: 14px; border-top: 1px solid #333; }
+        
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 28px; }
+            th, td { padding: 10px; font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Aspect <span>Glazing</span></div>
+        <a href="tel:07123456789" class="phone-link">📞 Call Direct: 07123 456789</a>
+    </header>
+
+    <section class="hero">
+        <h1>Premium Windows & Doors, Fitted Direct</h1>
+        <p>Cut out the expensive showroom middlemen. Showroom-quality A-rated glazing supplied direct from the manufacturer and installed by a master local joiner.</p>
+        <a href="tel:07123456789" class="btn">Get A Free Quote</a>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Why Dundee Homeowners Choose Us</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Master Joiner Fitment</h3>
+                <p>No rushed, third-party subcontractors. Every single frame is surveyed and installed to perfection by a time-served craftsman.</p>
+            </div>
+            <div class="card">
+                <h3>Direct Supplier Prices</h3>
+                <p>Because we keep our overheads low and don't operate a costly high-street showroom, we pass those direct manufacturing savings straight to you.</p>
+            </div>
+            <div class="card">
+                <h3>Zero Sales Pressure</h3>
+                <p>We don't sit in your living room for hours playing pricing games. We take quick, precise measurements, give you an honest quote, and leave the choice to you.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">The Independent Advantage</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>What You Pay For</th>
+                    <th>Giant Window Corporations</th>
+                    <th>Aspect Glazing</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Sales Commission</strong></td>
+                    <td>Massive markups to pay slick salesmen</td>
+                    <td>£0 (Deal directly with the fitters)</td>
+                </tr>
+                <tr>
+                    <td><strong>Showroom Cost</strong></td>
+                    <td>Built into the price of your windows</td>
+                    <td>£0 (We carry our samples straight to you)</td>
+                </tr>
+                <tr>
+                    <td><strong>Installation Team</strong></td>
+                    <td>Often casual, rushed subcontractors</td>
+                    <td>Local, highly-skilled master joiner</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Aspect Glazing. Serving Dundee, Angus, and Tayside.</p>
+        <p style="margin-top: 5px; font-size: 12px;">High-Efficiency uPVC Windows, Composite Doors, Bi-Folds, and French Doors.</p>
+    </footer>
+
+</body>
+</html>
