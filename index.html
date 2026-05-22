@@ -3,174 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aspect Glazing | Premium Glass & Glazing Services</title>
+    <title>Aspect Glazing | Premium Architectural Glass & Glazing</title>
     <style>
-        /* Modern Reset & Base Styles */
+        /* Modern Premium Reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', 'Segoe UI', Helvetica, Arial, sans-serif;
         }
 
         body {
-            background-color: #f4f6f8;
-            color: #2d3748;
+            background-color: #f8fafc;
+            color: #0f172a;
             line-height: 1.6;
         }
 
-        /* Premium Header Navigation */
+        /* Luxury Sticky Navigation */
         header {
-            background-color: #ffffff;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
             position: sticky;
             top: 0;
             z-index: 1000;
+            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
         }
 
         .nav-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 18px 24px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .logo {
-            font-size: 24px;
-            font-weight: 700;
-            color: #1a2a3a;
-            letter-spacing: 0.5px;
+            font-size: 26px;
+            font-weight: 800;
+            color: #0f172a;
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
         }
 
         .logo span {
-            color: #4a6b82;
+            color: #2563eb;
+            font-weight: 400;
         }
 
-        /* High-End Scottish Stone Theme Hero Banner */
+        /* High-Impact Hero Banner */
         .hero {
             position: relative;
-            /* Dark slate/charcoal backup color (#1a2a3a) ensures it never goes pink if the link is slow */
-            background: linear-gradient(rgba(20, 35, 50, 0.75), rgba(20, 35, 50, 0.85)), 
-                        url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            /* Premium stone property layout with deep slate overlay */
+            background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)), 
+                        url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
             color: #ffffff;
-            padding: 160px 20px;
+            padding: 180px 24px;
             text-align: center;
+            overflow: hidden;
         }
 
+        /* Glassmorphism content card to make text pop beautifully */
         .hero-content {
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
-        }
-
-        .hero h1 {
-            font-size: 46px;
-            font-weight: 700;
-            margin-bottom: 20px;
-            letter-spacing: -0.5px;
-            line-height: 1.25;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        }
-
-        .hero p {
-            font-size: 20px;
-            color: #e2e8f0;
-            margin-bottom: 35px;
-            font-weight: 300;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
-        }
-
-        /* Premium Call to Action Button */
-        .btn-phone {
-            display: inline-block;
-            background-color: #4a6b82;
-            color: #ffffff;
-            padding: 16px 40px;
-            font-size: 18px;
-            font-weight: 600;
-            text-decoration: none;
-            border-radius: 4px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-            transition: all 0.3s ease;
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-
-        .btn-phone:hover {
-            background-color: #385265;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-        }
-
-        /* Details / Content Section */
-        .details-section {
-            max-width: 900px;
-            margin: 80px auto;
-            padding: 0 20px;
-            text-align: center;
-        }
-
-        .details-section h2 {
-            font-size: 32px;
-            color: #1a2a3a;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-
-        .details-section p {
-            font-size: 18px;
-            color: #4a5568;
-            margin-bottom: 40px;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #1a2a3a;
-            color: #a0aec0;
-            text-align: center;
-            padding: 40px 20px;
-            margin-top: 100px;
-            border-top: 4px solid #4a6b82;
-        }
-
-        footer p {
-            font-size: 14px;
-        }
-
-        /* Responsive adjustments for mobile screens */
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 32px; }
-            .hero p { font-size: 16px; }
-            .btn-phone { width: 100%; padding: 15px; }
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <div class="nav-container">
-            <div class="logo">Aspect<span>Glazing</span></div>
-        </div>
-    </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Beautiful Scottish Cottage Glazing</h1>
-            <p>Expertly installed, premium glass solutions designed to withstand the elements and perfectly complement traditional stone and modern properties alike.</p>
-            <a href="tel:01234567890" class="btn-phone">Call Us: 01234567890</a>
-        </div>
-    </section>
-
-    <section class="details-section">
-        <h2>Professional Craftsmanship</h2>
-        <p>From traditional slate charm to sleek, weather-resistant modern finishes, we bring high-quality, durable glazing installations straight to your property. Built for the local climate, backed by reliable service.</p>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Aspect Glazing. All rights reserved.</p>
-        </div>
-    </footer>
-
-</body>
-</html>
+            background: rgba(255, 255, 255, 0.07);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 50px 40px;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 20px 40
