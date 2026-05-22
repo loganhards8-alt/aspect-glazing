@@ -3,36 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aspect Glazing | Premium Windows & Doors Scotland</title>
+    <title>Aspect Glazing Dundee | Windows, Doors & Double Glazing</title>
+    <meta name="description" content="Based in Dundee. Premium window and door installations with 15+ years of local experience. We cut out the middleman to beat high-pressure salesman prices.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
     <style>
-        /* Premium Homeowner Design Reset */
+        :root {
+            --primary: #1e3a8a; /* Deep Trust Blue */
+            --accent: #f59e0b;  /* Premium Gold/Amber */
+            --text: #1f2937;    /* Dark Charcoal */
+            --light: #f9fafb;   /* Off-white */
+        }
+
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', sans-serif;
         }
 
         body {
-            background-color: #f8fafc;
-            color: #1e293b;
+            color: var(--text);
+            background-color: #ffffff;
             line-height: 1.6;
         }
 
-        /* Clean Trust Navigation */
+        /* Header / Navigation */
         header {
-            background-color: #ffffff;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
             position: sticky;
             top: 0;
-            z-index: 1000;
-            border-bottom: 4px solid #0284c7; /* Trustworthy Ocean Blue Accent */
+            z-index: 100;
         }
 
         .nav-container {
-            max-width: 1200px;
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -41,220 +52,138 @@
         .logo {
             font-size: 24px;
             font-weight: 800;
-            letter-spacing: 0.5px;
-            color: #0f172a;
+            color: var(--primary);
         }
 
         .logo span {
-            color: #0284c7;
-            font-weight: 400;
+            color: var(--accent);
         }
 
-        /* Warm, Stunning Local Home Hero */
+        /* Hero Section */
         .hero {
-            position: relative;
-            min-height: 70vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 100px 20px;
-            /* Beautiful premium property with clean slate/stone architecture overlay */
-            background: linear-gradient(rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.8)), 
-                        url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            background: linear-gradient(135px, #1e3a8a 0%, #0f172a 100%);
+            color: white;
+            padding: 80px 20px;
             text-align: center;
         }
 
-        .hero-card {
+        .hero-content {
             max-width: 800px;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            padding: 50px 35px;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+            margin: 0 auto;
         }
 
         .badge {
-            display: inline-block;
-            background: #0284c7;
-            color: #ffffff;
-            font-size: 13px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
+            background: var(--accent);
+            color: #000;
             padding: 6px 16px;
-            border-radius: 4px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+            display: inline-block;
             margin-bottom: 20px;
         }
 
         .hero h1 {
-            font-size: 48px;
+            font-size: 42px;
             font-weight: 800;
             line-height: 1.2;
-            color: #ffffff;
             margin-bottom: 20px;
-            letter-spacing: -1px;
         }
 
         .hero p {
-            font-size: 20px;
-            color: #f1f5f9;
+            font-size: 18px;
+            opacity: 0.9;
             margin-bottom: 35px;
-            font-weight: 300;
         }
 
-        /* High-Converting Call to Action Button */
-        .btn-call {
-            display: inline-block;
-            background-color: #0284c7;
-            color: #ffffff;
-            padding: 18px 40px;
-            font-size: 18px;
+        .cta-button {
+            background: var(--accent);
+            color: #000;
+            padding: 16px 32px;
+            border-radius: 6px;
             font-weight: 700;
             text-decoration: none;
-            border-radius: 6px;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 20px rgba(2, 132, 199, 0.3);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+            display: inline-block;
+            font-size: 18px;
+            transition: transform 0.2s;
         }
 
-        .btn-call:hover {
-            background-color: #0369a1;
-            transform: translateY(-2px);
-            box-shadow: 0 15px 25px rgba(2, 132, 199, 0.4);
+        .cta-button:hover {
+            transform: scale(1.03);
         }
 
-        /* Core Services Split */
-        .services-section {
-            max-width: 1200px;
-            margin: 90px auto;
-            padding: 0 20px;
+        /* Core Values / Why Choose Us */
+        .why-us {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
         }
 
         .section-title {
             text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .section-title h2 {
-            font-size: 36px;
-            font-weight: 800;
-            color: #0f172a;
-            margin-bottom: 10px;
-        }
-
-        .section-title p {
-            font-size: 18px;
-            color: #64748b;
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 40px;
         }
 
         .grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
         }
 
         .card {
-            background: #ffffff;
-            border: 1px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 45px 35px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.01);
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 20px 40px rgba(15, 23, 42, 0.05);
-            border-color: #cbd5e1;
+            background: var(--light);
+            padding: 30px;
+            border-radius: 8px;
+            border-top: 4px solid var(--primary);
         }
 
         .card h3 {
-            font-size: 24px;
-            font-weight: 800;
-            color: #0f172a;
-            margin-bottom: 15px;
-        }
-
-        .card p {
-            color: #475569;
-            font-size: 16px;
-            margin-bottom: 25px;
-        }
-
-        /* Checklists that Homeowners Look For */
-        .home-list {
-            list-style: none;
-        }
-
-        .home-list li {
-            position: relative;
-            padding-left: 25px;
+            font-size: 20px;
             margin-bottom: 12px;
-            color: #334155;
-            font-weight: 600;
-            font-size: 15px;
+            color: var(--primary);
         }
 
-        .home-list li::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #0284c7;
-            font-weight: 900;
+        /* Services Preview */
+        .services {
+            background: var(--light);
+            padding: 60px 20px;
         }
 
-        /* Trust & Standards Ribbon */
-        .trust-banner {
-            background-color: #0f172a;
-            color: #ffffff;
-            padding: 50px 30px;
-            text-align: center;
-            border-radius: 12px;
-            margin-top: 80px;
-        }
-
-        .trust-banner h3 {
-            font-size: 26px;
-            font-weight: 800;
-            margin-bottom: 12px;
-        }
-
-        .trust-banner p {
-            color: #94a3b8;
-            max-width: 700px;
+        .services-container {
+            max-width: 1100px;
             margin: 0 auto;
-            font-size: 16px;
         }
 
-        /* Clean Footer */
-        footer {
-            background-color: #0f172a;
-            color: #64748b;
+        /* Contact / Footers */
+        .contact-section {
+            padding: 60px 20px;
             text-align: center;
-            padding: 40px 20px;
-            margin-top: 100px;
-            border-top: 1px solid #1e293b;
+            background: white;
         }
 
-        footer p {
+        .contact-info {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 30px;
             font-size: 14px;
+            opacity: 0.7;
         }
 
-        /* Mobile Responsiveness */
-        @media (max-width: 968px) {
-            .grid { grid-template-columns: 1fr; gap: 30px; }
-            .hero h1 { font-size: 36px; }
-            .hero p { font-size: 18px; }
-        }
-
+        /* Mobile adjustments */
         @media (max-width: 768px) {
-            .hero-card { padding: 35px 20px; }
-            .hero h1 { font-size: 30px; }
-            .btn-call { width: 100%; text-align: center; }
+            .hero h1 { font-size: 32px; }
+            .hero p { font-size: 16px; }
         }
     </style>
 </head>
@@ -267,53 +196,5 @@
     </header>
 
     <section class="hero">
-        <div class="hero-card">
-            <span class="badge">Premium Local Specialists</span>
-            <h1>Beautiful Windows &amp; Doors Installed Perfectly</h1>
-            <p>Upgrade your home with elite, highly insulated double &amp; triple glazing. Expertly designed to complement both traditional stone properties and modern local new builds.</p>
-            <a href="tel:01234567890" class="btn-call">Get A Free Quote: 01234567890</a>
-        </div>
-    </section>
-
-    <section class="services-section">
-        <div class="section-title">
-            <h2>What We Do Best</h2>
-            <p>Transforming homes across the local community with premium window and door transformations.</p>
-        </div>
-
-        <div class="grid">
-            <div class="card">
-                <h3>Premium Window Systems</h3>
-                <p>We supply and install highly energy-efficient window layouts designed seamlessly to block out drafts, cut heating bills, and match your property style perfectly.</p>
-                <ul class="home-list">
-                    <li>Perfect Fit for Traditional Stone &amp; New Builds</li>
-                    <li>Advanced Double &amp; Triple Glazing Protection</li>
-                    <li>Highly Secure Multi-Point Locking Systems</li>
-                    <li>Built Strong to Withstand the Rugged Weather</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3>High-End Insulated Doors</h3>
-                <p>Make a stunning first impression with ultra-secure, completely draft-proof composite and glass doors tailored exactly to your home configuration.</p>
-                <ul class="home-list">
-                    <li>Stunning Traditional &amp; Modern Designs</li>
-                    <li>Heavy-Duty Weatherproofing and Draft Seals</li>
-                    <li>Elite Thermal Insulation Engineering</li>
-                    <li>Durable Construction That Never Warps</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="trust-banner">
-            <h3>Tidy, Reliable Local Craftsmanship</h3>
-            <p>Whether you need a single drafty window replaced in an old family home, a beautiful new composite front door, or you're a local contractor looking for a reliable team to step onto a new build plot project—we deliver uncompromised standards from start to finish.</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Aspect Glazing. Premium Domestic Windows &amp; Doors. Built for the Scottish Climate.</p>
-    </footer>
-
-</body>
-</html>
+        <div class="hero-content">
+            <div class="badge">D
