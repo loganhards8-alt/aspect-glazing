@@ -3,114 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aspect Glazing | Premium Windows & Doors Dundee</title>
+    <title>Aspect Glazing | Premium Glass & Glazing Services</title>
     <style>
-        :root {
-            --dark: #1e2229;
-            --grey: #343a40;
-            --light: #f8f9fa;
-            --accent: #c5a059; /* Highland gold accent */
-            --white: #ffffff;
+        /* Modern Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: var(--white); color: var(--dark); line-height: 1.6; }
-        
-        header { background-color: var(--dark); color: var(--white); padding: 25px 20px; text-align: center; border-bottom: 4px solid var(--accent); }
-        .logo { font-size: 30px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; }
-        .logo span { color: var(--accent); }
-        .phone-link { color: var(--white); text-decoration: none; font-size: 19px; display: block; margin-top: 10px; font-weight: 600; letter-spacing: 1px; }
 
-        /* Background image swapped to a traditional Scottish stone cottage setting */
-        .hero { background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover; color: var(--white); padding: 100px 20px; text-align: center; }
-        .hero h1 { font-size: 40px; margin-bottom: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
-        .hero p { font-size: 19px; max-width: 650px; margin: 0 auto 35px; color: #e9ecef; }
-        
-        .btn { display: inline-block; background-color: var(--accent); color: var(--white); padding: 16px 40px; text-decoration: none; font-weight: bold; border-radius: 4px; text-transform: uppercase; font-size: 16px; transition: 0.3s; letter-spacing: 1px; }
-        .btn:hover { background-color: var(--white); color: var(--dark); }
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
 
-        .section { padding: 60px 20px; max-width: 1000px; margin: 0 auto; }
-        .section-title { text-align: center; font-size: 28px; margin-bottom: 40px; text-transform: uppercase; position: relative; }
-        .section-title::after { content: ''; display: block; width: 60px; height: 3px; background: var(--accent); margin: 10px auto 0; }
+        /* Premium Header Navigation */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-bottom: 40px; }
-        .card { background: var(--light); padding: 30px; border-radius: 6px; border-top: 4px solid var(--accent); box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        .card h3 { margin-bottom: 12px; font-size: 20px; color: var(--dark); text-transform: uppercase; font-size: 18px; }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: var(--light); border-radius: 6px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        th, td { padding: 18px; text-align: left; border-bottom: 1px solid #e9ecef; }
-        th { background-color: var(--dark); color: var(--white); text-transform: uppercase; font-size: 14px; letter-spacing: 1px; }
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1a365d;
+            letter-spacing: 0.5px;
+        }
 
-        footer { background: var(--dark); color: #adb5bd; text-align: center; padding: 40px 20px; font-size: 14px; border-top: 1px solid #343a40; }
-        
-        @media (max-width: 600px) {
-            .hero h1 { font-size: 28px; }
-            th, td { padding: 12px; font-size: 14px; }
+        .logo span {
+            color: #3182ce;
+        }
+
+        /* High-Standard Hero Banner */
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(26, 54, 93, 0.85), rgba(26, 54, 93, 0.85)), 
+                        url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            color: #ffffff;
+            padding: 140px 20px;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #e2e8f0;
+            margin-bottom: 35px;
+            font-weight: 300;
+        }
+
+        /* Call to Action Button */
+        .btn-phone {
+            display: inline-block;
+            background-color: #3182ce;
+            color: #ffffff;
+            padding: 16px 35px;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .btn-phone:hover {
+            background-color: #2b6cb0;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        /* Details / Content Section */
+        .details-section {
+            max-width: 900px;
+            margin: 80px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .details-section h2 {
+            font-size: 32px;
+            color: #1a365d;
+            margin-bottom: 20px;
+        }
+
+        .details-section p {
+            font-size: 18px;
+            color: #4a5568;
+            margin-bottom: 40px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a365d;
+            color: #a0aec0;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 100px;
+            border-top: 4px solid #3182ce;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* Responsive adjustments for mobile screens */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 34px; }
+            .hero p { font-size: 16px; }
+            .btn-phone { width: 100%; padding: 15px; }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <div class="logo">Aspect <span>Glazing</span></div>
-        <a href="tel:07123456789" class="phone-link">📞 Call Direct: 07123 456789</a>
+        <div class="nav-container">
+            <div class="logo">Aspect<span>Glazing</span></div>
+        </div>
     </header>
 
     <section class="hero">
-        <h1>Premium Windows & Doors, Fitted Direct</h1>
-        <p>Built to withstand the Scottish elements. Showroom-quality A-rated glazing supplied direct from the manufacturer and installed by a master local joiner.</p>
-        <a href="tel:07123456789" class="btn">Get A Free Quote</a>
+        <div class="hero-content">
+            <h1>Beautiful Scottish Cottage Glazing</h1>
+            <p>Expertly installed, premium glass solutions designed to withstand the elements and elevate your view.</p>
+            <a href="tel:01234567890" class="btn-phone">Call Us: 01234567890</a>
+        </div>
     </section>
 
-    <section class="section">
-        <h2 class="section-title">Why Local Homeowners Choose Us</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Master Joiner Fitment</h3>
-                <p>No rushed, third-party subcontractors. Every single frame is surveyed and installed to perfection by a time-served craftsman.</p>
-            </div>
-            <div class="card">
-                <h3>Direct Supplier Prices</h3>
-                <p>Because we keep our overheads low and don't operate a costly high-street showroom, we pass those direct manufacturing savings straight to you.</p>
-            </div>
-            <div class="card">
-                <h3>Zero Sales Pressure</h3>
-                <p>We don't sit in your living room for hours playing pricing games. We take quick, precise measurements, give you an honest quote, and leave the choice to you.</p>
-            </div>
-        </div>
-
-        <h2 class="section-title">The Independent Advantage</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>What You Pay For</th>
-                    <th>Giant Window Corporations</th>
-                    <th>Aspect Glazing</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Sales Commission</strong></td>
-                    <td>Massive markups to pay slick salesmen</td>
-                    <td>£0 (Deal directly with the fitters)</td>
-                </tr>
-                <tr>
-                    <td><strong>Showroom Cost</strong></td>
-                    <td>Built into the price of your windows</td>
-                    <td>£0 (We carry our samples straight to you)</td>
-                </tr>
-                <tr>
-                    <td><strong>Installation Team</strong></td>
-                    <td>Often casual, rushed subcontractors</td>
-                    <td>Local, highly-skilled master joiner</td>
-                </tr>
-            </tbody>
-        </table>
+    <section class="details-section">
+        <h2>Professional Craftsmanship</h2>
+        <p>From traditional charm to sleek modern finishes, we bring high-quality, durable glazing installations straight to your property. Get in touch with us today for a reliable, seamless service.</p>
     </section>
 
     <footer>
-        <p>&copy; 2026 Aspect Glazing. Serving Dundee, Angus, and Tayside.</p>
-        <p style="margin-top: 8px; font-size: 12px; color: #6c757d;">High-Efficiency uPVC Windows, Composite Doors, Bi-Folds, and French Doors.</p>
+        <div class="container">
+            <p>&copy; 2026 Aspect Glazing. All rights reserved.</p>
+        </div>
     </footer>
 
 </body>
