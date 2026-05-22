@@ -48,14 +48,14 @@
             color: #4a6b82;
         }
 
-        /* Scottish Stone & Cottage Heritage Hero Banner */
+        /* High-End Scottish Stone Theme Hero Banner */
         .hero {
             position: relative;
-            /* Using a high-quality stone architecture image to eliminate the Greece vibe */
-            background: linear-gradient(rgba(20, 35, 50, 0.8), rgba(20, 35, 50, 0.85)), 
-                        url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            /* Dark slate/charcoal backup color (#1a2a3a) ensures it never goes pink if the link is slow */
+            background: linear-gradient(rgba(20, 35, 50, 0.75), rgba(20, 35, 50, 0.85)), 
+                        url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
             color: #ffffff;
-            padding: 150px 20px;
+            padding: 160px 20px;
             text-align: center;
         }
 
@@ -70,6 +70,7 @@
             margin-bottom: 20px;
             letter-spacing: -0.5px;
             line-height: 1.25;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
 
         .hero p {
@@ -77,6 +78,7 @@
             color: #e2e8f0;
             margin-bottom: 35px;
             font-weight: 300;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
         }
 
         /* Premium Call to Action Button */
@@ -89,7 +91,7 @@
             font-weight: 600;
             text-decoration: none;
             border-radius: 4px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
             transition: all 0.3s ease;
             border: 1px solid rgba(255,255,255,0.1);
         }
@@ -97,7 +99,7 @@
         .btn-phone:hover {
             background-color: #385265;
             transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
         }
 
         /* Details / Content Section */
@@ -110,4 +112,65 @@
 
         .details-section h2 {
             font-size: 32px;
-            color: #1a2a3a
+            color: #1a2a3a;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .details-section p {
+            font-size: 18px;
+            color: #4a5568;
+            margin-bottom: 40px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a2a3a;
+            color: #a0aec0;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 100px;
+            border-top: 4px solid #4a6b82;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* Responsive adjustments for mobile screens */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 32px; }
+            .hero p { font-size: 16px; }
+            .btn-phone { width: 100%; padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">Aspect<span>Glazing</span></div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Beautiful Scottish Cottage Glazing</h1>
+            <p>Expertly installed, premium glass solutions designed to withstand the elements and perfectly complement traditional stone and modern properties alike.</p>
+            <a href="tel:01234567890" class="btn-phone">Call Us: 01234567890</a>
+        </div>
+    </section>
+
+    <section class="details-section">
+        <h2>Professional Craftsmanship</h2>
+        <p>From traditional slate charm to sleek, weather-resistant modern finishes, we bring high-quality, durable glazing installations straight to your property. Built for the local climate, backed by reliable service.</p>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Aspect Glazing. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
